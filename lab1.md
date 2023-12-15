@@ -44,6 +44,8 @@
     -  > ![Screenshot 2023-12-15 154322](https://github.com/hoangdat251004/nasm/assets/110254118/9be19cf0-2a55-4cca-bac2-68c0e90f954e)
     -  > ![Screenshot 2023-12-15 154332](https://github.com/hoangdat251004/nasm/assets/110254118/b47eaeb4-b750-4882-bdb5-e89db629ce87)
 
+- Then just write code to print follow the format above.
+
 - After all of this, the output will be like this:
   -   >  ![image](https://github.com/hoangdat251004/nasm/assets/110254118/ce973b67-c084-417d-8d4a-bba588e17987)
 
