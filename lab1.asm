@@ -11,7 +11,7 @@ section .data
     msg4 db "Welcome, "
     len4 equ $- msg4
 
-    msg5 db " to EHC"
+    msg5 db " to EHC", 0xa, 0xd
     len5 equ $- msg5
 
 section .bss
