@@ -11,8 +11,11 @@ section .data
     msg4 db "Dien tich cua hinh chu nhat: "
     len4 equ $- msg4
 
-    msg5 db " Chu vi cua hinh chu nhat: "
+    msg5 db "Chu vi cua hinh chu nhat: "
     len5 equ $- msg5
+
+    newLineMsg db 0xa, 0xd
+    newLineLen equ $- newLineMsg
 
 section .bss
     num1 resb 10
@@ -82,6 +85,13 @@ _start:
 	mov edx, 1
 	int 80h
 
+;---------NEWLINE------------;
+
+    mov eax, 4
+    mov ebx, 1
+    mov ecx, newLineMsg
+    mov edx, newLineLen
+    int 80h
 
 ;---------PERIMETER----------;
     mov eax, [num1]
@@ -116,6 +126,14 @@ _start:
 	mov ecx, resP
 	mov edx, 1
 	int 80h
+
+;---------NEWLINE------------;
+
+    mov eax, 4
+    mov ebx, 1
+    mov ecx, newLineMsg
+    mov edx, newLineLen
+    int 80h
 
 ;==========EXIT==========;
     mov eax, 1
