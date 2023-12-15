@@ -31,59 +31,59 @@ _start:
 ;=======INPUT=======;
 
     mov eax, 4
-	mov ebx, 1
-	mov ecx, msg1
-	mov edx, len1
-	int 80h
+    mov ebx, 1
+    mov ecx, msg1
+    mov edx, len1
+    int 80h
 
     mov eax, 4
-	mov ebx, 1
-	mov ecx, msg2
-	mov edx, len2
-	int 80h
+    mov ebx, 1
+    mov ecx, msg2
+    mov edx, len2
+    int 80h
 
     mov eax, 3
-	mov ebx, 0
-	mov ecx, num1
-	mov edx, 10
-	int 80h
+    mov ebx, 0
+    mov ecx, num1
+    mov edx, 10
+    int 80h
 
     mov eax, 3
-	mov ebx, 0
-	mov ecx, num2
-	mov edx, 10
-	int 80h
+    mov ebx, 0
+    mov ecx, num2
+    mov edx, 10
+    int 80h
 
     mov eax, 4
-	mov ebx, 1
-	mov ecx, msg3
-	mov edx, len3
-	int 80h
+    mov ebx, 1
+    mov ecx, msg3
+    mov edx, len3
+    int 80h
 
 ;==========CALCULATING==========;
 
 ;----------ACREAGE----------;	
-	mov al, [num1]
-	sub	al, '0'
+    mov al, [num1]
+    sub	al, '0'
 
-	mov bl, [num2]
-	sub bl, '0'
-	mul bl
-	add al, '0'
+    mov bl, [num2]
+    sub bl, '0'
+    mul bl
+    add al, '0'
 
-	mov [resA], al
+    mov [resA], al
 
     mov eax, 4
-	mov ebx, 1
-	mov ecx, msg4
-	mov edx, len4
-	int 80h
+    mov ebx, 1
+    mov ecx, msg4
+    mov edx, len4
+    int 80h
 
-	mov eax, 4
-	mov ebx, 1
-	mov ecx, resA
-	mov edx, 1
-	int 80h
+    mov eax, 4
+    mov ebx, 1
+    mov ecx, resA
+    mov edx, 1
+    int 80h
 
 ;---------NEWLINE------------;
 
@@ -95,10 +95,10 @@ _start:
 
 ;---------PERIMETER----------;
     mov eax, [num1]
-	sub eax, '0'
+    sub eax, '0'
 
-	mov ebx, [num2]
-	sub ebx, '0'
+    mov ebx, [num2]
+    sub ebx, '0'
 
     add eax, ebx
     add eax, '0'
@@ -116,16 +116,16 @@ _start:
     mov [resP], al
 
     mov eax, 4
-	mov ebx, 1
-	mov ecx, msg5
-	mov edx, len5
-	int 80h
+    mov ebx, 1
+    mov ecx, msg5
+    mov edx, len5
+    int 80h
 
     mov eax, 4
-	mov ebx, 1
-	mov ecx, resP
-	mov edx, 1
-	int 80h
+    mov ebx, 1
+    mov ecx, resP
+    mov edx, 1
+    int 80h
 
 ;---------NEWLINE------------;
 
