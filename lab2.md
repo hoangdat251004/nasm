@@ -43,5 +43,11 @@
 
     **Next,  we calculate the perimeter of rectangle**
 
-    - >
+    - > ![image](https://github.com/hoangdat251004/nasm/assets/110254118/c8d04c64-aef1-4388-a32f-ee8d232a1cec)
+
+    - Here we do the addition first by take the value from num1 and num2's address.
+    - Sub '0' to do the calculation and then add '0' to convert to ASCII to print it.
+    - Then multiply with 2 to finish the calculation.
+    - And store it to another address, then write some code to print it following format above.
+
 
